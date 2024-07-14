@@ -5,7 +5,7 @@ app.use(express.static("public"));
 
 /* Routes */
 app.get("/api/hello", (req, res) => {
-    res.json({message: process.env.TEXT})
+    res.json({message: process.env.GOOGLESHEETS_ENDPOINT})
 });
 // app.get("/api/post/:slug", getPostViews);
 
