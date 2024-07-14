@@ -22,7 +22,7 @@ app.post("/api/new", async (req, res) => {
     try {
       const response = await axios.post(process.env.GOOGLE_SHEETS_ENDPOINT, dataToSend);
       res.json({
-        message: "Post is work!",
+        message: "It's on Google Sheets now.",
         googleScriptResponse: response.data
       });
     } catch (error) {
